@@ -28,9 +28,9 @@ public class Junit5DiplayNameTest {
 	}
 
 	@Test
-	@DisplayName("MathUtil devide test")
-	void test_Devide() {
-		assertEquals(5, MathUtil.devide(25, 5));
+	@DisplayName("MathUtil divide test")
+	void test_Divide() {
+		assertEquals(5, MathUtil.divide(25, 5));
 	}
 	
 	@Test

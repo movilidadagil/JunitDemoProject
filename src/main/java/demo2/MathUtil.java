@@ -14,7 +14,7 @@ public class MathUtil {
 	    return num%2 == 0;
 	}
 	
-	public static int devide(int num, int by) {
+	public static int divide(int num, int by) {
 		return num/by;
 	}
 	

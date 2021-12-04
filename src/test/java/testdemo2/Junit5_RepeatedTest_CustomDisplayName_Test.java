@@ -27,7 +27,7 @@ public class Junit5_RepeatedTest_CustomDisplayName_Test {
 	@RepeatedTest(value = 3, name = "{displayName} - {currentRepetition}/{totalRepetitions}")
 	void test_Devide() {
 		System.out.println("test_Devide()");
-		assertEquals(5, MathUtil.devide(25, 5));
+		assertEquals(5, MathUtil.divide(25, 5));
 	}
 	
 	@RepeatedTest(value = 2, name = RepeatedTest.LONG_DISPLAY_NAME)
