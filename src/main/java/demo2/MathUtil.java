@@ -1,7 +1,10 @@
 package demo2;
 
 public class MathUtil {
-	
+
+	public MathUtil(){
+		System.out.println("constructor");
+	}
 	public static int add(int num1, int num2) {
 		return num1 + num2;
 	}

@@ -5,25 +5,25 @@ import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class Junit5_Instance_Test_Second {
 
 
-        MathUtil util = new MathUtil();
+        MathUtil   util = new MathUtil() ;
 
         @BeforeAll
-        void beforeAllInit() {
+        public static void beforeAllInit() {
             System.out.println("running before all");
         }
 
         @AfterAll
-        void afterAllCleanUp() {
+        public static void afterAllCleanUp() {
             System.out.println("running after all");
         }
 
         @BeforeEach
         void init() {
             System.out.println("running before each...");
+
         }
 
         @AfterEach
@@ -35,6 +35,11 @@ public class Junit5_Instance_Test_Second {
         void testSum() {
             assertEquals(2, util.addWithInstance(1, 1));
         }
+
+    @Test
+    void testSumSec() {
+        assertEquals(2, util.addWithInstance(3, 1));
+    }
 
 
 

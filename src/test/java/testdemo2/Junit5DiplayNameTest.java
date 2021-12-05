@@ -34,7 +34,7 @@ public class Junit5DiplayNameTest {
 	}
 	
 	@Test
-	@DisplayName("MathUtil isPrime test")
+	@DisplayName("Sadece ben bilirim")
 	void test_IsPrime() {
 		assertTrue(MathUtil.isPrime(13));
 	}

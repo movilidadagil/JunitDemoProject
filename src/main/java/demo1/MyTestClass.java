@@ -9,4 +9,8 @@ public class MyTestClass {
 			return Integer.parseInt(param1);
 		}
 	}
+
+	public int calculateAge(String birthDate){
+		return -1;
+	}
 }
