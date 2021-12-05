@@ -25,4 +25,8 @@ public class MathUtil {
 	    }
 	    return true;
 	}
+
+	public int addWithInstance(int num1, int num2){
+		return num1 + num2;
+	}
 }

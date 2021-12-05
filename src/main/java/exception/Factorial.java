@@ -11,4 +11,10 @@ public class Factorial {
         }
         return product;
     }
+
+    public static void main(String[] args){
+        Factorial factorial;
+        factorial = new Factorial();
+
+    }
 }

@@ -1,16 +1,15 @@
 package testdemo2;
 
 import demo2.MathUtil;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.Timeout;
+import org.junit.jupiter.api.*;
+
 import java.util.concurrent.TimeUnit;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 public class Junit5_Timeout_Annotation_Test {
-	
+
+
 	@BeforeAll
 	@Timeout(4) // skips all tests if this method execution time exceeds 4 seconds
     static void setUpBeforeAllTests() throws Exception {
@@ -51,4 +50,6 @@ public class Junit5_Timeout_Annotation_Test {
 		assertEquals(10, MathUtil.multiple(5, 2));
 		System.out.println("test_isPrime()");
 	}
+
+
 }
